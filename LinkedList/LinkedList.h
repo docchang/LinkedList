@@ -29,12 +29,10 @@ public:
 class LinkedList {
 public:
     Node *Head;
-    Node *Tail;
     int size;
     
     LinkedList() {
         Head = NULL;
-        Tail = Head;
         size = 0;
     }
     
@@ -46,24 +44,52 @@ public:
         }
     }
     
-    void insert(Node *newNode) {
+    Node *getTail() {
+        Node *p = Head;
+        while (p->next != NULL) {
+            p = p->next;
+        }
+        return p;
+    }
+    
+    void insertTail(Node *newNode) {
         size++;
         
         //empty list
-        if (Tail == NULL) {
-            Tail = newNode;
-            Head = Tail;
+        if (Head == NULL) {
+            Head = newNode;
             return;
         }
         
-        Tail->next = newNode;
-        Tail = newNode;
-        Tail->next = NULL;
+        Node *tail = getTail();
+        tail->next = newNode;
+        tail = tail->next;      //advance tail to the new node
+        tail->next = NULL;      //ensure NULL terminated
     }
     
-    void insert(int value) {
+    //insert Head
+    void insertHead(Node *newNode) {
+        size++;
+        
+        //empty list
+        if (Head == NULL) {
+            Head = newNode;
+            return;
+        }
+        
+        newNode->next = Head;
+        Head = newNode;
+    }
+    
+    //insert Head
+    void insertHead(int value) {
         Node *newNode = new Node(value);
-        insert(newNode);
+        insertHead(newNode);
+    }
+    //insert Tail
+    void insertTail(int value) {
+        Node *newNode = new Node(value);
+        insertTail(newNode);
     }
 
     bool deleteNode(int value) {        
@@ -71,11 +97,9 @@ public:
             
             //value found
             if (i->value == value) {
+
                 if (i == Head) {
                     Head = i->next;
-                } else if (i == Tail) {
-                    Tail = prev;
-                    Tail->next = NULL;
                 }  else {
                     prev->next = i->next;
                 }
@@ -99,7 +123,7 @@ public:
         Node *ptr = Head;
         Head = Head->next;
         reverse();
-        insert(ptr);
+        insertTail(ptr);
         size--;
     }
     

@@ -16,22 +16,44 @@ int main (int argc, const char * argv[])
 {
     LinkedList list;
     
-    list.insert(1);
-    list.insert(2);
-    list.insert(3);
-    list.insert(4);
-    list.insert(5);
-
+    list.insertHead(1);
+    list.insertHead(2);
+    list.insertHead(3);
+    list.insertHead(4);
+    list.insertHead(5);
     cout << list.size << ":" << list << endl;
     
     list.deleteNode(1);
-    list.deleteNode(3);
-    
+    list.deleteNode(3);    
     cout << list.size << ":" << list << endl;
     
     list.reverse();
-    
     cout << list.size << ":" << list << endl;
+    
+    list.deleteNode(1);
+    list.deleteNode(3);    
+    cout << list.size << ":" << list << endl;
+
+    list.deleteNode(5);
+    list.deleteNode(4);
+    list.deleteNode(2);
+    cout << list.size << ":" << list << endl;
+    list.deleteNode(5);
+    list.deleteNode(4);
+    list.deleteNode(2);
+    cout << list.size << ":" << list << endl;
+
+    list.reverse();
+    cout << list.size << ":" << list << endl;
+    
+    
+    list.insertHead(1);
+    list.insertHead(2);
+    list.insertHead(3);
+    list.insertHead(4);
+    list.insertHead(5);
+    cout << list.size << ":" << list << endl;
+
     
     return 0;
 }
