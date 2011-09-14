@@ -22,16 +22,16 @@ int main (int argc, const char * argv[])
     list.insert(4);
     list.insert(5);
 
-    cout << list << endl;
+    cout << list.size << ":" << list << endl;
     
     list.deleteNode(1);
     list.deleteNode(3);
     
-    cout << list << endl;
+    cout << list.size << ":" << list << endl;
     
     list.reverse();
     
-    cout << list << endl;
+    cout << list.size << ":" << list << endl;
     
     return 0;
 }

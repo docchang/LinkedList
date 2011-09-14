@@ -35,6 +35,7 @@ public:
     LinkedList() {
         Head = NULL;
         Tail = Head;
+        size = 0;
     }
     
     ~LinkedList() {
@@ -46,6 +47,8 @@ public:
     }
     
     void insert(Node *newNode) {
+        size++;
+        
         //empty list
         if (Tail == NULL) {
             Tail = newNode;
@@ -73,11 +76,12 @@ public:
                 } else if (i == Tail) {
                     Tail = prev;
                     Tail->next = NULL;
-                } else {
+                }  else {
                     prev->next = i->next;
                 }
                 
                 free(i);
+                size--;
                 return true;
             }
         }
@@ -96,6 +100,7 @@ public:
         Head = Head->next;
         reverse();
         insert(ptr);
+        size--;
     }
     
     //overload << operator
