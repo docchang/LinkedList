@@ -1,0 +1,68 @@
+TLinkedList
+v3
+r1
+cCheck dependencies
+cCompileC build/LinkedList.build/Debug/LinkedList.build/Objects-normal/x86_64/main.o /Users/docchang/Development/iOS/Projects/LinkedList/LinkedList/main.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cLd /Users/docchang/Development/iOS/Projects/LinkedList/build/Debug/LinkedList normal x86_64
+
+N/Developer/SDKs/MacOSX10.6.sdk
+c000000004DD0FEB000000000000000EE
+t1305542320
+s238
+
+N/Users/docchang/Development/iOS/Projects/LinkedList/LinkedList/LinkedList.h
+c000000004E709430000000000000088A
+t1316000816
+s2186
+i<iostream>
+
+N/Users/docchang/Development/iOS/Projects/LinkedList/LinkedList/main.cpp
+c000000004E7090F90000000000000246
+t1315999993
+s582
+i<iostream>
+i"LinkedList.h"
+
+N/Users/docchang/Development/iOS/Projects/LinkedList/build/Debug/LinkedList
+t2
+s0
+
+N/Users/docchang/Development/iOS/Projects/LinkedList/build/LinkedList.build/Debug/LinkedList.build/Objects-normal/x86_64/LinkedList.LinkFileList
+c000000004E7094D6000000000000007F
+t1316000982
+s127
+
+N/Users/docchang/Development/iOS/Projects/LinkedList/build/LinkedList.build/Debug/LinkedList.build/Objects-normal/x86_64/main.o
+t2
+s0
+
+CBuild AST from /Users/docchang/Development/iOS/Projects/LinkedList/LinkedList/main.cpp
+r0
+
+CCheck dependencies
+r0
+lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies57958956cc20b441^849f9056cc20b441^---0#1#0#--18"Check dependencies
+
+CCompileC build/LinkedList.build/Debug/LinkedList.build/Objects-normal/x86_64/main.o /Users/docchang/Development/iOS/Projects/LinkedList/LinkedList/main.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s337693782.567131
+e337693782.941019
+r1
+xCompileC
+xbuild/LinkedList.build/Debug/LinkedList.build/Objects-normal/x86_64/main.o
+x/Users/docchang/Development/iOS/Projects/LinkedList/LinkedList/main.cpp
+xnormal
+xx86_64
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection79"Compile /Users/docchang/Development/iOS/Projects/LinkedList/LinkedList/main.cppe04b9156cc20b441^c0eaf056cc20b441^---0#0#0#-19%DVTDocumentLocation2@87"file://localhost/Users/docchang/Development/iOS/Projects/LinkedList/LinkedList/main.cpp0000000000000000^1825"CompileC build/LinkedList.build/Debug/LinkedList.build/Objects-normal/x86_64/main.o LinkedList/main.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/docchang/Development/iOS/Projects/LinkedList    setenv LANG en_US.US-ASCII    /Developer/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-print-source-range-info -fdiagnostics-show-category=id -fdiagnostics-parseable-fixits -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wparentheses -Wswitch -Wno-unused-parameter -Wunused-variable -Wunused-value -Wshorten-64-to-32 -DDEBUG -isysroot /Developer/SDKs/MacOSX10.6.sdk -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -fvisibility-inlines-hidden -iquote /Users/docchang/Development/iOS/Projects/LinkedList/build/LinkedList.build/Debug/LinkedList.build/LinkedList-generated-files.hmap -I/Users/docchang/Development/iOS/Projects/LinkedList/build/LinkedList.build/Debug/LinkedList.build/LinkedList-own-target-headers.hmap -I/Users/docchang/Development/iOS/Projects/LinkedList/build/LinkedList.build/Debug/LinkedList.build/LinkedList-all-target-headers.hmap -iquote /Users/docchang/Development/iOS/Projects/LinkedList/build/LinkedList.build/Debug/LinkedList.build/LinkedList-project-headers.hmap -I/Users/docchang/Development/iOS/Projects/LinkedList/build/Debug/include -I/Users/docchang/Development/iOS/Projects/LinkedList/build/LinkedList.build/Debug/LinkedList.build/DerivedSources/x86_64 -I/Users/docchang/Development/iOS/Projects/LinkedList/build/LinkedList.build/Debug/LinkedList.build/DerivedSources -F/Users/docchang/Development/iOS/Projects/LinkedList/build/Debug -c /Users/docchang/Development/iOS/Projects/LinkedList/LinkedList/main.cpp -o /Users/docchang/Development/iOS/Projects/LinkedList/build/LinkedList.build/Debug/LinkedList.build/Objects-normal/x86_64/main.o
+
+CLd /Users/docchang/Development/iOS/Projects/LinkedList/build/Debug/LinkedList normal x86_64
+s337693782.943097
+e337693782.967830
+r1
+xLd
+x/Users/docchang/Development/iOS/Projects/LinkedList/build/Debug/LinkedList
+xnormal
+xx86_64
+lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection79"Link /Users/docchang/Development/iOS/Projects/LinkedList/build/Debug/LinkedList1781f156cc20b441^c6c3f756cc20b441^---0#0#0#--615"Ld build/Debug/LinkedList normal x86_64    cd /Users/docchang/Development/iOS/Projects/LinkedList    setenv MACOSX_DEPLOYMENT_TARGET 10.6    /Developer/usr/bin/clang++ -arch x86_64 -isysroot /Developer/SDKs/MacOSX10.6.sdk -L/Users/docchang/Development/iOS/Projects/LinkedList/build/Debug -F/Users/docchang/Development/iOS/Projects/LinkedList/build/Debug -filelist /Users/docchang/Development/iOS/Projects/LinkedList/build/LinkedList.build/Debug/LinkedList.build/Objects-normal/x86_64/LinkedList.LinkFileList -mmacosx-version-min=10.6 -o /Users/docchang/Development/iOS/Projects/LinkedList/build/Debug/LinkedList
+
